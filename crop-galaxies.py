@@ -33,7 +33,8 @@ def main():
     parser.add_argument("-d", "--input_dir", type=str, required=True,
             help="input directory with Fields")
     parser.add_argument("-Rp", "--rp", type=int, required=True,
-            help="Size in Rp for each stamp")
+            help="Size in Rp for each stamp. Let's say you input 5 here,\
+                the size of each stamp will be 5*Rp", default=5)
     parser.add_argument("-o", "--output_dir", type=str, required=True,
             help="output directory for saving stamps")
     parser.add_argument('--save_png', dest='save_png', action='store_true')
