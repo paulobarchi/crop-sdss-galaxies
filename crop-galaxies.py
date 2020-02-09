@@ -45,11 +45,10 @@ def main():
     half_size = float(args.rp/2.0)
 
     df = pd.read_csv(args.input_csv)
-    print(len(df.ObjId.unique()))
-    exit()
 
     for index, row in df.iterrows():
         objId = row['ObjId'].astype(int)
+        out_count = out_count + 1
 
         field_file_string = "fpC-%06d-%c%d-%04d.fit" % (
                 int(row['run']), "r", int(row['camcol']), int(row['field']))
