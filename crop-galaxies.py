@@ -5,7 +5,7 @@ from math import fabs
 from os import path
 import astropy.io.fits as pyfits
 import matplotlib.pyplot as plt
-import matplotlib.colors as colors\
+import matplotlib.colors as colors
 
 
 def saveImgFromFitsData(file_name, data):
